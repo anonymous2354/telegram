@@ -22,3 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', show_project_files, name='show_files'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
