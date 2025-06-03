@@ -6,7 +6,7 @@ from telegram.ext import ContextTypes
 from asgiref.sync import sync_to_async
 
 # Setup Django ORM
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "telebot.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "telebot.telebot.settings")
 django.setup()
 
 from core.models import VideoID
